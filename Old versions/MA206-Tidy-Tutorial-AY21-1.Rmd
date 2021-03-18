@@ -328,7 +328,9 @@ Looking at this plot we see that almost all of our observations are below \$150,
 ```{r message=FALSE, warning=FALSE}
 employed_under_150K = employed_data %>% 
   filter(Earnings<150000)
+```
 
+```{r eval=FALSE, include=FALSE}
 employed_data %>% filter(Earnings>150000) %>%  count(Sex)
 
 employed_under_150K %>% count(Sex)
